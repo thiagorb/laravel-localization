@@ -1,6 +1,6 @@
 {
   "name": "laravel-localization",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Implements the localization Laravel facade on the browser side",
   "repository": {
     "type": "git",
@@ -8,7 +8,7 @@
   },
   "main": "dist/laravel-localization.js",
   "scripts": {
-    "test": "mocha --compilers js:babel-core/register",
+    "test": "mocha -u tdd --compilers js:babel-core/register",
     "dist": "node_modules/.bin/webpack"
   },
   "author": "Thiago Barcala",
