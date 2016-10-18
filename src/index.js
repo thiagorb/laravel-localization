@@ -174,14 +174,4 @@ const Lang = {
     }
 };
 
-if (typeof(window) !== 'undefined') {
-    const localizationDataElement = window.document.getElementById('facades-data-localization');
-
-    if (localizationDataElement) {
-        const localizationData = JSON.parse(localizationDataElement.innerHTML);
-        Lang.addMessages(localizationData.messages);
-        Lang.setLocale(localizationData.locale);
-    }
-}
-
 export default Lang;
